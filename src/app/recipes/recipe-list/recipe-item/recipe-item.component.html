@@ -1,10 +1,10 @@
 <a href="#"
    class="list-group-item clearfix" (click)="onRecipeClick(recipe)">
   <div class="pull-left col-xs-9">
-    <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
-    <p class="list-group-item-text">{{ recipe.description }}</p>
+    <p class="list-group-item-heading list-item-title">{{ recipe.name }}</p>
+    <p class="list-group-item-text text-italic">{{ recipe.description }}</p>
   </div>
   <span class="pull-right col-xs-3" style="display: flex; height: auto; padding: 0; align-items: stretch;">
-        <img src="{{ recipe.imagePath }}" alt="{{ recipe.name }}" class="img-rounded" style="margin: 0; max-height: 45px; min-height: 42px; flex: 1; max-width: fit-content; justify-self: center;">
+        <img src="{{ recipe.imagePath }}" alt="{{ recipe.name }}" class="img-rounded" style=" max-height: 45px; min-height: 44px; flex: 1; max-width: max-content; justify-self: center;">
       </span>
 </a>
