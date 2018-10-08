@@ -1,0 +1,4 @@
+div.pull-left h4,
+div.pull-left p {
+  word-wrap: break-word;
+}

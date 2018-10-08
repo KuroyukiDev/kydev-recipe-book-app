@@ -1,5 +1,10 @@
-<li class="list-group-item">
-  <h4 class="text-center">
-    recipe-item works!
-  </h4>
-</li>
+<a href="#"
+   class="list-group-item clearfix" (click)="onRecipeClick(recipe)">
+  <div class="pull-left col-xs-9">
+    <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
+    <p class="list-group-item-text">{{ recipe.description }}</p>
+  </div>
+  <span class="pull-right col-xs-3" style="display: flex; height: auto; padding: 0; align-items: stretch;">
+        <img src="{{ recipe.imagePath }}" alt="{{ recipe.name }}" class="img-rounded" style="margin: 0; max-height: 45px; min-height: 42px; flex: 1; max-width: fit-content; justify-self: center;">
+      </span>
+</a>
