@@ -43,6 +43,8 @@ export class RecipeService {
   }
 
   addRecipeToShoppingList(ingredients: Ingredient[]) {
-    this.slService.addRecipeToList(ingredients);
+    if (ingredients.length !== 0) {
+      this.slService.addRecipeToList(ingredients);
+    }
   }
 }
